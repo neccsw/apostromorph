@@ -1,0 +1,18 @@
+[project]
+name = "apostromorph"
+version = "0.1.0"
+description = "Ukrainian apostrophe and morphology analyzer"
+readme = "README.md"
+requires-python = "==3.14.*"
+dependencies = [
+    "gradio>=6.31,<7",
+    "pymorphy3>=2.0.6,<3",
+    "pymorphy3-dicts-uk>=2.4.1.1.1663094765",
+]
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
